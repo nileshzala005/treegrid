@@ -1,0 +1,11 @@
+<div class="control-section mb-5">
+    <ejs-treegrid #treegrid [contextMenuItems]="contextMenuItems" GridCopyOption="CopyData,IncludeHeaders" [allowRowDragAndDrop]='true' [toolbar]="toolbar" [dataSource]='data' [editSettings]='editing' allowSelection='true' height='350' childMapping='subtasks' [treeColumnIndex]='1' allowPaging='true' [pageSettings]='pageSettings' [selectionSettings]='selectionSettings' [pageSettings]='pageSettings' allowExcelExport='true' allowPdfExport='true'>
+        <e-columns>
+            <e-column field='taskID' headerText='Task ID' width='80' textAlign='Right'></e-column>
+            <e-column field='taskName' headerText='Task Name' width='200'></e-column>
+            <e-column field='startDate' headerText='Start Date' width='100' format="yMd" textAlign='Right'></e-column>
+            <e-column field='duration' headerText='Duration' width='90' textAlign='Right'></e-column>
+            <e-column field='progress' headerText='Progress' width='90' textAlign='Right'></e-column>
+        </e-columns>
+    </ejs-treegrid>
+</div>
